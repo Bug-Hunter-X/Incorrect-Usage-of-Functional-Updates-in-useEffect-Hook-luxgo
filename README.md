@@ -1,0 +1,3 @@
+# Incorrect Usage of Functional Updates in useEffect Hook
+This repository demonstrates a common error in React when using functional updates within `useEffect` hooks without specifying dependencies.  In React 18+, the asynchronous nature of state updates and the timing of effect executions can lead to the unexpected behavior shown in `bug.js`.
+The solution in `bugSolution.js` demonstrates the correct way to use functional updates within `useEffect` to prevent unexpected behavior.  Specifically, it addresses the issue by correctly specifying the dependency array.
